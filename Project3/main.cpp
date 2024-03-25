@@ -1,12 +1,12 @@
-#include <iostream>
+п»ї#include <iostream>
 #include <ctime>
 #include <random>
 #include <algorithm>
 int main() {
 	setlocale(LC_ALL, "Russian");
-	//Задача 2 Темература в январе
-	int n;
-	std::cout << "Задача 2. Массив\n";
+	//Р—Р°РґР°С‡Р° 2 РўРµРјРµСЂР°С‚СѓСЂР° РІ СЏРЅРІР°СЂРµ
+	/*int n;
+	std::cout << "Р—Р°РґР°С‡Р° 2. РњР°СЃСЃРёРІ\n";
 	const int size2 = 31;
 	int arr2[size2];
 	srand(time(NULL));
@@ -14,7 +14,7 @@ int main() {
 		arr2[i] = rand() % (-5 + 1 - 30) + (-30);
 		std::cout << arr2 << ' ';
 	}
-	std::cout << "Введите число -> ";
+	std::cout << "Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ -> ";
 	std::cin >> n;
 	int counter = 0;
 	int sum = 0;
@@ -23,15 +23,15 @@ int main() {
 		if (arr2[i] < n)
 			counter++;
 	}
-	std::cout << "Среднее арифм. = " << double(sum) / size2 << std::endl;
-	std::cout << "Кол-во чисел, следующих условию = " << counter << "\n\n";*/
+	std::cout << "РЎСЂРµРґРЅРµРµ Р°СЂРёС„Рј. = " << double(sum) / size2 << std::endl;
+	std::cout << "РљРѕР»-РІРѕ С‡РёСЃРµР», СЃР»РµРґСѓСЋС‰РёС… СѓСЃР»РѕРІРёСЋ = " << counter << "\n\n";*/*/
 
 
-	// Задача 3 Вхождение в диапазон
+	// Р—Р°РґР°С‡Р° 3 Р’С…РѕР¶РґРµРЅРёРµ РІ РґРёР°РїР°Р·РѕРЅ
 	int n, m;
-	std::cout << "Введите начало диапазона -> ";
+	std::cout << "Р’РІРµРґРёС‚Рµ РЅР°С‡Р°Р»Рѕ РґРёР°РїР°Р·РѕРЅР° -> ";
 	std::cin >> n;
-	std::cout << "Введите конец диапазона -> ";
+	std::cout << "Р’РІРµРґРёС‚Рµ РєРѕРЅРµС† РґРёР°РїР°Р·РѕРЅР° -> ";
 	std::cin >> m;
 	const int size3 = 20;
 	int arr3[size3];
@@ -42,6 +42,7 @@ int main() {
 			(arr3[i] >= n && arr3[i] <= m ? '!' : ' ') <<
 			std::endl;
 	}
+	//Р—Р°РґР°С‡Р° 4 Р‘СѓРґРµС‚ РїРѕР·Р¶Рµ!
 
 	return 0;
 }
